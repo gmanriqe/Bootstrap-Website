@@ -193,7 +193,7 @@ p {
 }
 
 .choose-us-item div {
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 
 	position: absolute;
 	top: 0;
@@ -278,12 +278,6 @@ p {
 	font-size: 18px;
 	padding-top: 50px;
 }
-
-
-
-
-
-
 
 
 
