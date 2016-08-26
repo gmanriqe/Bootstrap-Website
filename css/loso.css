@@ -360,11 +360,40 @@ p {
 	line-height: 25px;
 }
 
+/* Compra */
 
+.purchase-now {
+	background-color: #1a1a1a;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 
+.purchase-now p {
+	color: #dfdfdf;
+	font-size: 18px;
+	font-weight: 300;
+}
 
+.btn-purchase-now,
+.btn-purchase-now:active,
+.btn-purchase-now:focus,
+.btn-purchase-now:visited {
+	background-color: #129cf3;
+	border: 1px solid #129cf3;
+	border-radius: 3px;
+	padding: 15px 35px;
+	text-transform: uppercase;
 
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
 
+.btn-purchase-now:hover {
+	background-color: #1274b1;
+	border-color: #316b90
+}
 
 
 
