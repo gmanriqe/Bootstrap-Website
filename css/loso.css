@@ -581,8 +581,52 @@ p {
 	border-color: #129cf3;
 }
 
+.social-icons {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
 
+.social-icons ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
 
+.social-icons ul li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 10px;
+}
+
+.social-icons ul li a {
+	width: 45px;
+	height: 45px;
+
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #9d9d9d;
+	border-radius: 3px;
+
+	line-height: 49px;
+	color: #9d9d9d;
+
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+
+}
+
+.social-icons ul li a:hover {
+	background-color: #129cf3;
+	border: 1px solid #129cf3;
+	color: #fff;
+}
+
+.social-icons ul li a i {
+	font-size: 20px;
+}
 
 
 
