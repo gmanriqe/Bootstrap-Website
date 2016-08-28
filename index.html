@@ -16,7 +16,41 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="header">
+		<header class="header" id="inicio">
+
+			<!-- Menu navegacion -->
+			<nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top -->
+				<div class="container">
+					
+					<div class="navbar-header">
+						<!-- Menu burguer responsive -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="#">
+							<!-- Logo pequeño -->
+							<img src="images/logo-small.png" alt="Logo Menu">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="loso-navbar-collapse-1"> <!-- loso-navbar-collapse-1 -->
+						<ul class="nav navbar-nav navbar-right"> <!-- navbar-right -->
+							<li><a href="#inicio" class="nav-item">Inicio</a></li>
+							<li><a href="#sobreNosotros" class="nav-item">Sobre Nosotros</a></li>
+							<li><a href="#caracteristicas" class="nav-item">Caracteristicas</a></li>
+							<li><a href="#pantallas" class="nav-item">Pantallas</a></li>
+							<li><a href="#descarga" class="nav-item">Descarga</a></li>
+							<li><a href="#contactanos" class="nav-item">Contactanos</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Fin menu navegacion -->
+
 			<div class="header-overlay">
 				<div class="container">
 
@@ -60,7 +94,7 @@
 		</header>
 
 		<!-- Acerca de -->
-		<section>
+		<section id="sobreNosotros">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
@@ -182,13 +216,13 @@
 		</section>
 
 		<!-- Caracteristicas -->
-		<section class="features">
+		<section class="features" id="caracteristicas">
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 						<div class="section-title">
-							<h2> Features</h2>
+							<h2> Caracteristicas</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo ad eum consequuntur consectetur temporibus? Dolor ipsum, nam, similique possimus praesentium impedit commodi eligendi quidem accusantium, quam tempore dignissimos perspiciatis.</p>
 						</div>
 					</div>
@@ -299,7 +333,7 @@
 		</section>
 
 		<!-- Pantallas -->
-		<section>
+		<section class="screens" id="pantallas">
 
 			<div class="container">
 				<div class="row">
@@ -378,7 +412,7 @@
 		</section>
 
 		<!-- Descarga ahora -->
-		<section class="download-now">
+		<section class="download-now" id="descarga">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
@@ -448,7 +482,7 @@
 		</section>
 		
 		<!-- Contactanos -->
-		<section class="contact-us">
+		<section class="contact-us" id="contactanos">
 
 			<div class="container">
 				<div class="row">
@@ -509,7 +543,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="scroll-top">
-							<a href="#"><i class="fa fa-angle-up"></i></a>
+							<a href="#inicio"><i class="fa fa-angle-up"></i></a>
 						</div>
 					</div>
 				</div>
