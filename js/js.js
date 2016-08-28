@@ -33,8 +33,7 @@ $(document).ready(function(){
 	});
 });
 
-// Añadiendo Smooth Scrolling
-// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+/* Añadiendo Smooth Scrolling https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
 $(document).ready(function(){
 	$('.nav-item').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -49,3 +48,29 @@ $(document).ready(function(){
     }
   });
 });
+
+/* Activando un item del menu mediante un click */
+$(document).ready(function(){
+	$('.navbar-nav li a').on('click', function(){
+		$('.navbar-nav li a').parent().removeClass('active');
+		$(this).parent().addClass('active')
+	});
+});
+
+/* Activando un item del menu mediante el scroll */
+$(document).ready(function(){
+	$(window).scroll(function(){
+		$('section').each( function(){
+			var bb = $(this).attr('id');
+			var hei = $(this).outerHeight();
+			var grttop = $(this).offset().top - 70;
+
+			if($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei){
+				$(".navbar-nav li a[href='#"+ bb +"']").parent().addClass('active');
+			}else {
+				$(".navbar-nav li a[href='#"+ bb +"']").parent().removeClass('active');
+			}
+		});
+	});
+});
+
