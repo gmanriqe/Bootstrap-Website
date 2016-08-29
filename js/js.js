@@ -99,5 +99,12 @@ $(document).ready(function(){
   });
 });
 
+/* bfintal / contador */
+$('.counter-run').counterUp({
+    delay: 10,
+    time: 2000
+});
+
+
 
 
